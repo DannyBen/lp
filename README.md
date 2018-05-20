@@ -1,6 +1,10 @@
 Lovely Print
 ==================================================
 
+[![Gem Version](https://badge.fury.io/rb/lp.svg)](https://badge.fury.io/rb/lp)
+[![Build Status](https://travis-ci.com/DannyBen/lp.svg?branch=master)](https://travis-ci.com/DannyBen/lp)
+
+
 ---
 
 Because Awesome is Annoying, and Pretty is Not.
