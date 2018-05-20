@@ -1,9 +1,15 @@
-Lovely print
+Lovely Print
 ==================================================
 
 ---
 
-The tinyest gem possible. Print anything as YAML with `lp your_object`.
+Because Awesome is Annoying, and Pretty is Not.
+
+This is the tinyest gem possible. It lets you print anything as YAML with:
+
+```ruby
+lp your_object
+```
 
 ---
 
@@ -20,7 +26,14 @@ Usage
 ```ruby
 require 'lp'
 
+anything = { ace: 'ventura', like: ['a', 'glove'] }
 lp anything
+# => 
+# ---
+# :ace: ventura
+# :like:
+# - a
+# - glove
 ```
 
 
