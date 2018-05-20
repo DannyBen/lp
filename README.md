@@ -17,7 +17,7 @@ Installation
 Usage
 --------------------------------------------------
 
-```
+```ruby
 require 'lp'
 
 lp anything
