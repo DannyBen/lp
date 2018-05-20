@@ -22,3 +22,13 @@ require 'lp'
 
 lp anything
 ```
+
+
+Why?...
+--------------------------------------------------
+
+- `p` is messy
+- `pp` is messy
+- `ap` is colorful and messy
+- why not
+
