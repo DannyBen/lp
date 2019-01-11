@@ -15,8 +15,4 @@ Gem::Specification.new do |s|
   s.homepage    = 'https://github.com/dannyben/lp'
   s.license     = 'MIT'
   s.required_ruby_version = ">= 2.4.0"
-
-  s.add_development_dependency 'rspec', '~> 3.6'
-  s.add_development_dependency 'runfile', '~> 0.10'
-  s.add_development_dependency 'runfile-tasks', '~> 0.4'
 end
