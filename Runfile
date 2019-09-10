@@ -7,3 +7,5 @@ version LP::VERSION
 
 RunfileTasks::RubyGems.all 'lp'
 RunfileTasks::Testing.rspec
+
+require_relative 'debug.rb' if File.exist? 'debug.rb'
