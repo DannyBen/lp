@@ -7,12 +7,19 @@ Lovely Print
 
 ---
 
-Because Awesome is Annoying, and Pretty is Not.
+Colorful YAML dump for debug purposes.
 
-This is the tinyest gem possible. It lets you print anything as YAML with:
+Print a colorful YAML output:
 
 ```ruby
 lp your_object
+```
+
+Print a plain YAML output:
+
+```ruby
+lp your_object
+# same as: puts your_object.to_yaml
 ```
 
 ---
@@ -21,31 +28,4 @@ Installation
 --------------------------------------------------
 
     $ gem install lp
-
-
-
-Usage
---------------------------------------------------
-
-```ruby
-require 'lp'
-
-anything = { ace: 'ventura', like: ['a', 'glove'] }
-lp anything
-# => 
-# ---
-# :ace: ventura
-# :like:
-# - a
-# - glove
-```
-
-
-Why?...
---------------------------------------------------
-
-- `p` is messy
-- `pp` is messy
-- `ap` is colorful and messy
-- why not
 

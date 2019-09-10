@@ -1,12 +1,37 @@
 require 'spec_helper'
 
 describe LP do
-  describe '#lp' do
-    let(:something) {{ ace: 'ventura', like: ['a', 'glove'] }}
+  describe '#lp!' do
+    subject {{ ace: 'ventura', like: ['a', 'glove'] }}
 
-    it "works" do
-      expected = "---\n:ace: ventura\n:like:\n- a\n- glove\n"
-      expect{ lp something }.to output(expected).to_stdout
+    it "outputs plain yaml dump" do
+      expect{ lp! subject }.to output_fixture 'lp-bang'
+    end
+  end
+
+  describe '#lp' do
+    subject do
+      module Monsters
+        class Monster
+          attr_accessor :friends
+          def initialize(first, last, middle=nil)
+            @first, @last, @middle = first, last, middle
+          end
+        end
+      end
+
+      a = Monsters::Monster.new 'Mike', 'Wazowski'
+      b = Monsters::Monster.new 'Randall', 'Boggs'
+      c = Monsters::Monster.new 'James', 'Sullivan', 'P.'
+
+      a.friends = [b, c]
+      b.friends = {one: a, two: c}
+
+      a
+    end
+
+    it "outputs colorful yaml dump" do
+      expect{ lp subject }.to output_fixture 'lp'
     end
   end
 end

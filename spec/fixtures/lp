@@ -1,0 +1,16 @@
+[32m--- [31m&1[0m [34m>>> [0mMonsters:[0m:Monster[32m
+first:[0m Mike[32m
+last:[0m Wazowski[32m
+middle:[0m [32m
+friends:[0m[32m
+- [34m>>> [0mMonsters:[0m:Monster[32m
+  first:[0m Randall[32m
+  last:[0m Boggs[32m
+  middle:[0m [32m
+  friends:[0m[32m
+    :one:[0m [31m*1[0m[32m
+    :two:[0m [31m&2[0m [34m>>> [0mMonsters::Monster[32m
+      first:[0m James[32m
+      last:[0m Sullivan[32m
+      middle:[0m P.
+- [31m*2[0m
