@@ -21,3 +21,8 @@ def lp(anything)
 
   puts result
 end
+
+def lp?(anything)
+  methods = anything.methods - Object.methods
+  lp methods: methods, instance_vars: anything.instance_variables
+end

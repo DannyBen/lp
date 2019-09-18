@@ -1,3 +1,4 @@
+require "byebug"
 require "runfile-tasks"
 require_relative 'lib/lp'
 
