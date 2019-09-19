@@ -34,4 +34,28 @@ describe LP do
       expect{ lp subject }.to output_fixture 'lp'
     end
   end
+
+  describe 'lp?' do
+    subject do
+      class Monster
+        attr_accessor :friends, :skills
+
+        def initialize
+          @friends = []
+          @skills = []
+        end
+
+        def eat; end
+        def sleep; end
+        def scare; end
+      end
+
+      Monster.new
+      
+    end
+
+    it "prints the objects methods and instance vars" do
+      expect{ lp? subject }.to output_fixture 'lp-what'
+    end
+  end
 end

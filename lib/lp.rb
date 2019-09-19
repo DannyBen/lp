@@ -21,3 +21,9 @@ def lp(anything)
 
   puts result
 end
+
+def lp?(anything)
+  methods = (anything.methods - Object.methods).sort
+  vars = anything.instance_variables.sort
+  lp methods: methods, instance_vars: vars
+end
