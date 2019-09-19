@@ -23,6 +23,7 @@ def lp(anything)
 end
 
 def lp?(anything)
-  methods = anything.methods - Object.methods
-  lp methods: methods, instance_vars: anything.instance_variables
+  methods = (anything.methods - Object.methods).sort
+  vars = anything.instance_variables.sort
+  lp methods: methods, instance_vars: vars
 end
