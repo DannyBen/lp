@@ -2,7 +2,7 @@ Lovely Print
 ==================================================
 
 [![Gem Version](https://badge.fury.io/rb/lp.svg)](https://badge.fury.io/rb/lp)
-[![Build Status](https://travis-ci.com/DannyBen/lp.svg?branch=master)](https://travis-ci.com/DannyBen/lp)
+[![Build Status](https://github.com/DannyBen/lp/workflows/Test/badge.svg)](https://github.com/DannyBen/lp/actions?query=workflow%3ATest)
 
 
 ---
