@@ -5,7 +5,7 @@ describe LP do
     subject {{ ace: 'ventura', like: ['a', 'glove'] }}
 
     it "outputs plain yaml dump" do
-      expect{ lp! subject }.to output_fixture 'lp-bang'
+      expect{ lp! subject }.to output_approval 'lp-bang'
     end
   end
 
@@ -31,7 +31,7 @@ describe LP do
     end
 
     it "outputs colorful yaml dump" do
-      expect{ lp subject }.to output_fixture 'lp'
+      expect{ lp subject }.to output_approval 'lp'
     end
   end
 
@@ -55,7 +55,7 @@ describe LP do
     end
 
     it "prints the objects methods and instance vars" do
-      expect{ lp? subject }.to output_fixture 'lp-what'
+      expect{ lp? subject }.to output_approval 'lp-what'
     end
   end
 end
