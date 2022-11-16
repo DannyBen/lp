@@ -1,10 +1,10 @@
-require "yaml"
+require 'yaml'
 
-def lp! anything
+def lp!(anything)
   puts anything.to_yaml
 end
 
-def lp anything
+def lp(anything)
   reset   = "\e[0m"
   red     = "\e[31m"
   green   = "\e[32m"
@@ -19,7 +19,7 @@ def lp anything
   puts result
 end
 
-def lp? anything
+def lp?(anything)
   methods = (anything.methods - Object.methods).sort
   vars = anything.instance_variables.sort
   lp methods: methods, instance_vars: vars

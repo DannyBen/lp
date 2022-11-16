@@ -1,2 +1,2 @@
 inherit_gem:
-  google-style: google-style.yml
+  rentacop: rentacop.yml

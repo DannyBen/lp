@@ -1,12 +1,10 @@
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
-gem "byebug"
-gem "rspec"
-gem "rspec_approvals"
-gem "runfile"
-gem "runfile-tasks"
-
-gem "google-style"
-
+gem 'byebug'
+gem 'rentacop'
+gem 'rspec'
+gem 'rspec_approvals'
+gem 'runfile'
+gem 'runfile-tasks'
 
 gemspec
