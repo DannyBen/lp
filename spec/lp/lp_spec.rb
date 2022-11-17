@@ -3,15 +3,15 @@ require_relative 'mocks'
 
 describe LP do
   describe '#lp!' do
-    subject { { ace: 'ventura', like: %w[a glove] } }
+    subject(:hash) { { ace: 'ventura', like: %w[a glove] } }
 
     it 'outputs plain yaml dump' do
-      expect { lp! subject }.to output_approval 'lp-bang'
+      expect { lp! hash }.to output_approval 'lp-bang'
     end
   end
 
   describe '#lp' do
-    subject do
+    subject :object do
       monster1.friends = [monster2, monster3]
       monster2.friends = { one: monster1, two: monster3 }
       monster1
@@ -22,15 +22,15 @@ describe LP do
     let(:monster3) { Monsters::Monster.new 'James', 'Sullivan', 'P.' }
 
     it 'outputs colorful yaml dump' do
-      expect { lp subject }.to output_approval 'lp'
+      expect { lp object }.to output_approval 'lp'
     end
   end
 
   describe 'lp?' do
-    subject { Monster.new }
+    subject(:object) { Monster.new }
 
     it 'prints the objects methods and instance vars' do
-      expect { lp? subject }.to output_approval 'lp-what'
+      expect { lp? object }.to output_approval 'lp-what'
     end
   end
 end
