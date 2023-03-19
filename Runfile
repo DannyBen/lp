@@ -1,5 +1,5 @@
 require "byebug"
-require 'lp'
+require 'lp/version'
 
 title   "LP Developer Toolbelt"
 summary "Runfile tasks for building the LP gem"
