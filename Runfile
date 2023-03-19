@@ -1,12 +1,9 @@
 require "byebug"
-require "runfile-tasks"
-require_relative 'lib/lp'
+require 'lp'
 
 title   "LP Developer Toolbelt"
 summary "Runfile tasks for building the LP gem"
 version LP::VERSION
 
-RunfileTasks::RubyGems.all 'lp'
-RunfileTasks::Testing.rspec
-
-require_relative 'debug.rb' if File.exist? 'debug.rb'
+import_gem 'runfile-tasks/lp'
+import 'debug'
