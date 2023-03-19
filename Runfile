@@ -5,5 +5,5 @@ title   "LP Developer Toolbelt"
 summary "Runfile tasks for building the LP gem"
 version LP::VERSION
 
-import_gem 'runfile-tasks/lp'
+import_gem 'runfile-tasks/gem'
 import 'debug'
