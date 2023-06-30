@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
   s.homepage    = 'https://github.com/dannyben/lp'
   s.license     = 'MIT'
 
-  s.required_ruby_version = '>= 2.6.0'
+  s.required_ruby_version = '>= 3.0'
 
   s.metadata['rubygems_mfa_required'] = 'true'
 end

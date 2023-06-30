@@ -12,14 +12,14 @@ describe LP do
 
   describe '#lp' do
     subject :object do
-      monster1.friends = [monster2, monster3]
-      monster2.friends = { one: monster1, two: monster3 }
-      monster1
+      mike.friends = [randall, sulley]
+      randall.friends = { one: mike, two: sulley }
+      mike
     end
 
-    let(:monster1) { Monsters::Monster.new 'Mike', 'Wazowski' }
-    let(:monster2) { Monsters::Monster.new 'Randall', 'Boggs' }
-    let(:monster3) { Monsters::Monster.new 'James', 'Sullivan', 'P.' }
+    let(:mike) { Monsters::Monster.new 'Mike', 'Wazowski' }
+    let(:randall) { Monsters::Monster.new 'Randall', 'Boggs' }
+    let(:sulley) { Monsters::Monster.new 'James', 'Sullivan', 'P.' }
 
     it 'outputs colorful yaml dump' do
       expect { lp object }.to output_approval 'lp'
