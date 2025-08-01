@@ -1,12 +1,6 @@
 Lovely Print
 ==================================================
 
-[![Gem Version](https://badge.fury.io/rb/lp.svg)](https://badge.fury.io/rb/lp)
-[![Build Status](https://github.com/DannyBen/lp/workflows/Test/badge.svg)](https://github.com/DannyBen/lp/actions?query=workflow%3ATest)
-
-
----
-
 Colorful YAML dump for debug purposes.
 
 Print a colorful YAML output:
