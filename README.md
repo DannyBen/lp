@@ -1,6 +1,8 @@
 Lovely Print
 ==================================================
 
+![repocard](https://repocard.dannyben.com/svg/lp.svg)
+
 Colorful YAML dump for debug purposes.
 
 Print a colorful YAML output:
